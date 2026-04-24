@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meridian — Orașul tău. Afacerile tale.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <div class="nav-logo">
+    <div class="nav-logo-compass">
+      <svg class="compass-svg" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="40" cy="40" r="36" stroke="#e02020" stroke-width="1.5" opacity="0.4"/>
+        <circle cx="40" cy="40" r="28" stroke="#e02020" stroke-width="0.8" opacity="0.2"/>
+        <!-- N -->
+        <polygon points="40,8 44,32 40,36 36,32" fill="#e02020"/>
+        <!-- S -->
+        <polygon points="40,72 44,48 40,44 36,48" fill="#f0f4ff" opacity="0.6"/>
+        <!-- E -->
+        <polygon points="72,40 48,36 44,40 48,44" fill="#f0f4ff" opacity="0.6"/>
+        <!-- W -->
+        <polygon points="8,40 32,36 36,40 32,44" fill="#f0f4ff" opacity="0.6"/>
+        <circle cx="40" cy="40" r="4" fill="#e02020"/>
+        <circle cx="40" cy="40" r="2" fill="#04090f"/>
+        <!-- tick marks -->
+        <line x1="40" y1="4" x2="40" y2="10" stroke="#e02020" stroke-width="1.5"/>
+        <line x1="40" y1="70" x2="40" y2="76" stroke="#f0f4ff" stroke-width="1" opacity="0.5"/>
+        <line x1="4" y1="40" x2="10" y2="40" stroke="#f0f4ff" stroke-width="1" opacity="0.5"/>
+        <line x1="70" y1="40" x2="76" y2="40" stroke="#f0f4ff" stroke-width="1" opacity="0.5"/>
+      </svg>
+    </div>
+    <div class="nav-logo-text">
+      <div class="brand">MERIDIAN</div>
+      <div class="sub">Orașul tău. Afacerile tale.</div>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#problema">Problema</a></li>
+    <li><a href="#cum">Cum funcționează</a></li>
+    <li><a href="#clienti">Clienți</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+    Rezervă un loc
+  </button>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-vignette"></div>
+  <div class="hero-bottom-fade"></div>
+
+  <!-- flyer mockup -->
+  <div class="flyer-wrap" id="flyerWrap">
+    <div class="flyer-glow"></div>
+    <img
+      class="flyer-img"
+      src="res/flyer.jpeg"
+      alt="Flyer Meridian"
+    />
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Publicitate locală · Conexiuni reale</p>
+    <h1 class="hero-headline">Pune-ți afacerea<br><span>pe hartă.</span></h1>
+    <p class="hero-sub">Ajungem direct în cutia poștală a clienților tăi — cu flyere premium și coduri QR care conectează afacerea ta cu oamenii din cartier.</p>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROBLEMA ═══ -->
+<section id="problema">
+  <div>
+    <span class="section-tag">// 01 — Provocarea</span>
+    <div class="divider"></div>
+    <h2 class="section-title reveal">Publicitatea<br>digitală nu<br>ajunge <span style="color:var(--red)">peste tot.</span></h2>
+    <p class="section-body reveal">Mulți proprietari de locuințe nu știu unde să caute servicii de încredere. Multe afaceri locale nu pot ajunge la demograficul potrivit. Meridian rezolvă asta simplu, fizic și eficient.</p>
+  </div>
+  <div class="problema-cards">
+    <div class="problema-card">
+      <h4>🏠 Proprietarii sunt pierduți</h4>
+      <p>Când apare o urgență — instalator, electrician, renovare — oamenii nu știu la cine să apeleze și cui să aibă încredere.</p>
+    </div>
+    <div class="problema-card">
+      <h4>📱 Reclamele online sunt ignorate</h4>
+      <p>Ad-urile digitale sunt blocate, deranjante sau pur și simplu nu ajung la audiența locală potrivită pentru servicii fizice.</p>
+    </div>
+    <div class="problema-card">
+      <h4>📬 Flyerele clasice nu convertesc</h4>
+      <p>Un flyer fără context și fără posibilitate de urmărire e bani aruncați. Meridian aduce date reale și conexiuni verificabile.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CUM FUNCTIONEAZA ═══ -->
+<section id="cum">
+  <span class="section-tag">// 02 — Procesul</span>
+  <div class="divider center"></div>
+  <h2 class="section-title reveal">Cum funcționează<br><span style="color:var(--red)">Meridian?</span></h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Rezervi un loc pe flyer</h3>
+      <p>Alegi unul din cele 16 spații disponibile pe flyerul premium Meridian distribuit în zona ta țintă.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Primești un cod QR unic</h3>
+      <p>Codul tău QR este integrat pe flyer și redirecționează utilizatorul direct către afacerea ta sau oferta lunii.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Flyerul ajunge acasă</h3>
+      <p>Distribuim mii de flyere fizice în cutiile poștale ale localnicilor — publicitate reală, la ușa clientului tău.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DE CE NOI ═══ -->
+<section id="dece">
+  <div>
+    <span class="section-tag">// 03 — De ce Meridian</span>
+    <div class="divider"></div>
+    <h2 class="section-title reveal">Rezultate<br>măsurabile.<br><span style="color:var(--red)">Costuri mici.</span></h2>
+    <p class="section-body reveal">Nu vindem promisiuni vagi. Fiecare cod QR înregistrează date reale de scanare, astfel știi exact câți oameni au interacționat cu afacerea ta — direct din cutia lor poștală.</p>
+  </div>
+  <div class="dece-stats">
+    <div class="stat-box">
+      <div class="stat-num">16</div>
+      <div class="stat-label">Locuri premium per flyer</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">QR</div>
+      <div class="stat-label">Cod unic cu tracking real</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Distribuție fizică garantată</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">0€</div>
+      <div class="stat-label">Costuri ascunse sau abonamente</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CLIENTI ═══ -->
+<section id="clienti">
+  <span class="section-tag">// 04 — Parteneri de încredere</span>
+  <div class="divider center"></div>
+  <h2 class="section-title reveal">Afaceri care au<br>ales <span style="color:var(--red)">Meridian.</span></h2>
+  <p class="section-body reveal" style="margin-inline:auto;text-align:center;">Alăturați-ne o comunitate de afaceri locale verificate care aleg să ajungă direct la oamenii din cartier.</p>
+  <div class="clients-grid">
+    <div class="client-card">
+      <div class="client-icon">🔧</div>
+      <div class="client-name">Instalații Pro</div>
+      <div class="client-type">Instalații & Reparații</div>
+    </div>
+    <div class="client-card">
+      <div class="client-icon">⚡</div>
+      <div class="client-name">ElectroServ</div>
+      <div class="client-type">Electricitate</div>
+    </div>
+    <div class="client-card">
+      <div class="client-icon">🏗️</div>
+      <div class="client-name">Construct Total</div>
+      <div class="client-type">Renovări & Construcții</div>
+    </div>
+    <div class="client-card">
+      <div class="client-icon">🌿</div>
+      <div class="client-name">Verde Grădini</div>
+      <div class="client-type">Amenajări exterioare</div>
+    </div>
+    <div class="client-card">
+      <div class="client-icon">🚗</div>
+      <div class="client-name">AutoService Plus</div>
+      <div class="client-type">Service Auto</div>
+    </div>
+    <div class="client-card">
+      <div class="client-icon">🏠</div>
+      <div class="client-name">Casa Curată</div>
+      <div class="client-type">Curățenie & Menaj</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div>
+    <span class="section-tag">// 05 — Contact</span>
+    <div class="divider"></div>
+    <h2 class="section-title reveal">Rezervă-ți<br>locul pe <span style="color:var(--red)">flyer.</span></h2>
+    <p class="section-body reveal">Locurile sunt limitate per zonă. Scrie-ne și te contactăm în cel mai scurt timp pentru a discuta disponibilitatea în zona ta.</p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-item-icon">✉</div>
+        contact@meridian.ro
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon">📞</div>
+        +40 700 000 000
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon">📍</div>
+        România — Distribuție națională
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <form
+      class="contact-form"
+      action="https://formspree.io/f/YOUR_FORM_ID"
+      method="POST"
+      id="contactForm"
+    >
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nume</label>
+          <input type="text" name="nume" placeholder="Ion Popescu" required />
+        </div>
+        <div class="form-group">
+          <label>Telefon</label>
+          <input type="tel" name="telefon" placeholder="+40 7xx xxx xxx" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="email@afacerea.ro" required />
+      </div>
+      <div class="form-group">
+        <label>Tipul afacerii</label>
+        <select name="tip_afacere">
+          <option value="">Selectează categoria...</option>
+          <option>Instalații & Reparații</option>
+          <option>Electricitate</option>
+          <option>Construcții & Renovări</option>
+          <option>Amenajări exterioare</option>
+          <option>Service Auto</option>
+          <option>Curățenie & Menaj</option>
+          <option>Alimentație & Catering</option>
+          <option>Sănătate & Frumusețe</option>
+          <option>Altele</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Mesaj</label>
+        <textarea name="mesaj" rows="4" placeholder="Spune-ne în ce zonă ești și cum te putem ajuta..."></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Trimite cererea →</button>
+      <div class="form-success" id="formSuccess">
+        ✓ Mesajul a fost trimis! Te contactăm în curând.
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div>© 2026 <span class="red">MERIDIAN</span> — Orașul tău. Afacerile tale.</div>
+  <div>Construit cu ♥ pentru afacerile locale din România</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
