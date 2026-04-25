@@ -107,6 +107,7 @@ nav {
   filter: drop-shadow(0 30px 60px rgba(224,32,32,0.35)) drop-shadow(0 0 80px rgba(0,80,180,0.25));
 }
 .flyer-img {
+  margin-bottom: 250px;
   width: 100%; border-radius: 6px;
   border: 1px solid rgba(224,32,32,0.4);
   display: block;
@@ -134,9 +135,9 @@ nav {
 }
 @media screen and (max-width: 768px) {
   .hero-headline {
-    font-size: 2rem;
-    letter-spacing: 0.2em;
-    margin-top: 90%;
+    font-size: 2.3rem!important;
+    letter-spacing: 0.2em!important;
+    /* margin-top: 20%!important; */
   }
   .hero-eyebrow {
     font-family: 'Space Mono', monospace;
@@ -148,7 +149,6 @@ nav {
   }
 }
 .hero-headline {
-  margin-top: 20%;
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(3.2rem, 8vw, 7rem);
   line-height: 0.95;
