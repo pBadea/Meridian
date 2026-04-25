@@ -60,3 +60,19 @@ form.addEventListener('submit', async (e) => {
     btn.disabled = false;
   }
 });
+
+/* ── Flyer hover reveal ── */
+const flyerImg = document.querySelector('.flyer-img');
+flyerImg.src = 'res/flyer_unfilled.jpeg';
+
+flyerImg.style.transition = 'transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.15s, opacity 0.3s ease 0.15s';
+
+flyerImg.addEventListener('mouseenter', () => {
+  flyerImg.src = 'res/flyer.jpeg';
+  flyerImg.style.transform = 'scale(1.02)';
+});
+
+flyerImg.addEventListener('mouseleave', () => {
+  flyerImg.style.transform = 'scale(1)';
+  flyerImg.src = 'res/flyer_unfilled.jpeg';
+});
